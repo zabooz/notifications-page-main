@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color:hsl(210, 60%, 98%)
+}
+header,
+main{
+    width: 410px;
+    padding: 1rem;
+    background-color: #fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h2{
+    font-size: 1.3rem;
+    display: inline-block;
+    margin-right: .5rem;
+}
+.unread-count{
+    width:1.5rem;
+    height: 1.3rem;
+    color: white;
+    border-radius: .2rem;
+    display: inline-block;
+    text-align: center;
+    background-color:hsl(224, 47%, 27%);
+}
+header button{
+    color: hsl(219, 14%, 63%);
+    background-color: #fff;
+    border: none;
+    font-size: .8rem;
+}
+header button:hover{
+    cursor: pointer;
+}
+
+.notification{
+    display: flex;
+    gap:1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+.notification > img{
+    display: inline;
+    width:3rem;
+    height: 3rem;
+}
+.unread{
+    background-color:hsl(210, 60%, 98%);
+    border-radius: 1rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+.text p{
+    line-height: 1.3rem;
+}
+.text small{
+    color:rgb(107, 111, 117) ;
+}
+.dot{
+    font-size: .5rem;
+    padding-top: .38rem;;
+}
+.remove-dots{
+    display: none;
+}
+.message{
+    text-align:left;
+    margin-left: 5rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding:1rem;
+    border-radius: .5rem;
+    border: 1px solid rgb(221, 201, 201);
+}
+.message:hover{
+    cursor: pointer;
+    background-color: hsl(222, 28%, 93%);
+
+}
+a{
+    text-decoration: none;
+}
+@media (min-width:700px){
+
+    main,
+    header{
+        width: 700px;
+    }
+    .notification > img + div +img{
+        margin-left: 10rem;
+    }
+    .message{
+        margin-left: 5rem;
+    }
+}
